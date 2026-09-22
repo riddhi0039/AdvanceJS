@@ -19,3 +19,11 @@ const server = http.createServer((req, res) => {
 server.listen(3000, "127.0.0.1", () => {     
     console.log('Server is running on port 3000');
 })
+
+// const server2 = http.createServer((req,res)=>{
+//     console.log("Hello World");
+//     console.log(req.url);
+//     if (req.url=="/"){
+//         res.end(homePage.replace("{{%content%}}", "Home page"))
+//     }
+// })
