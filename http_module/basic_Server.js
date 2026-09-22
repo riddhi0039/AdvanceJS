@@ -2,7 +2,7 @@ import http from 'http';
 import { readFile } from 'fs';
 import { readFileSync } from 'fs';
 
-const data  =readFileSync("index.html", "utf-8");
+const data  =fs.readFileSync("index.html", "utf-8");
 
 //Create basic http server
 const server = http.createServer((req, res) => {
